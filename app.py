@@ -35,7 +35,7 @@ def predict():
         result = predict_skin_cancer(image)
         return jsonify({'result': result})
 
-@app.route('/api/health', methods=['GET'])
+@app.route('/', methods=['GET'])
 def health_check():
     return jsonify({"status": "Server is running"}), 200
 
